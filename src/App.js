@@ -14,6 +14,7 @@ export default function App() {
     products: dbProducts,
   });
 
+  // Page title depends on whether some category is selected or not
   useEffect(() => {
     document.title = `Shop: ${
       state.category ? state.category.replace("FAKE: ", "") : "ALL"
